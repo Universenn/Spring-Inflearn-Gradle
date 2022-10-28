@@ -3,6 +3,7 @@ package com.example.springgradleinflearn.service;
 import com.example.springgradleinflearn.domain.Member;
 import com.example.springgradleinflearn.repository.MemberRepository;
 import com.example.springgradleinflearn.repository.MemoryMemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -14,6 +15,7 @@ public class MemberService {
 //    private final MemberRepository memberRepository = new MemoryMemberRepository();
     private final MemberRepository memberRepository;
 
+    @Autowired
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
