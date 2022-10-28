@@ -3,10 +3,12 @@ package com.example.springgradleinflearn.service;
 import com.example.springgradleinflearn.domain.Member;
 import com.example.springgradleinflearn.repository.MemberRepository;
 import com.example.springgradleinflearn.repository.MemoryMemberRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class MemberService {
 
 //    private final MemberRepository memberRepository = new MemoryMemberRepository();
